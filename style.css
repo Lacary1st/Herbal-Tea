@@ -137,3 +137,61 @@
     padding-top: 50px;
     /* line-height: 10px; */
 }
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 100px;
+}
+.services > div{
+    width: 31%;
+    background-color: rgb(227, 238, 230);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 0.5em grey;
+    /* padding: 30px; */
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    /* margin: 0 auto; */
+}
+.services img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.services i{
+    color: green;
+    font-size: 35px;
+    border:15px solid lightgreen;
+    background-color: lightgreen;
+    border-radius: 40px;
+    
+}
+.services button{
+    margin-top: 20px;
+    padding: 5px;
+    width: 50%;
+    letter-spacing: 3px;
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.services button a{
+    color: white;
+    text-decoration: none;
+    /* text-align: center; */
+}
+.services button a:hover{
+    color: rgb(128, 160, 128);
+    background-color: black;
+}
+.product-description{
+    text-align: center;
+    line-height: 25px;
+}

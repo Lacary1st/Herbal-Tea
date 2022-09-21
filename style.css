@@ -252,3 +252,12 @@ form > button{
     color: white;
     background-color: green;
 }
+.black-footer{
+    background-color: black;
+}
+/*#icon{
+    display: flex;
+    color: white;
+    align-content: center;
+    gap: 20px;
+}*/

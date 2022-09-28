@@ -48,6 +48,8 @@
     flex-wrap: wrap;
     background-color: rgb(227, 238, 230);
 }
+
+
 .feature-topic{
     text-align: center;
 }
@@ -59,9 +61,13 @@
 @media screen and (min-width:576px) {
 
   .features{
+    /* margin-left: 200px; */
+    /* margin: 0 700px; */
+    /* margin: 0 auto; */
     display: flex;
     flex-wrap: wrap;
   }  
+ 
   .icon{
     width: 50%;
     flex-grow: 0;
@@ -86,10 +92,10 @@
     
 }
 
-.features > div{
-    /* width: 20%; */
+ /* .features > div{
+    width: 20%;
     margin-left: 10px;
-}
+}  */
 .icon > div{
     text-align: center;
     color: green;
@@ -206,8 +212,18 @@
 }
 .products img{
     width: 100%;
-    height: 300px;
+    height: 350px;
     border-radius: 9px;
+}
+.check{
+    font-size: 30px;
+    color: green;
+}
+.product{
+    font-size: 45px;
+}
+.product-descrip{
+    line-height: 40px;
 }
 .products button{
     margin-top: 20px;
@@ -225,7 +241,8 @@
       flex-wrap: wrap;
     }  
     .products > div{
-      width: 50%;
+        flex-wrap: wrap;
+      width: 100%;
       flex-grow: 0;
       flex-shrink: 0;
       flex-basis: calc(50% - 2rem);
@@ -238,7 +255,7 @@
   }
   @media screen and (min-width:1170px) {
       .products{
-          width: 100%;
+          width: 40%;
           flex: 0 0 calc(25% - 2rem);
       }
       .icon:hover{
@@ -248,10 +265,24 @@
       
   }
 
+  /* end of product section */
+
+  /* service section begins */
+
 .explore{
     text-align: center;
     padding-top: 50px;
     /* line-height: 10px; */
+}
+.explo{
+    font-size: 35px;
+    color: green;
+}
+.our-service{
+    margin-top: 10px;
+    font-size: 40px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
 }
 
 .services{
@@ -263,17 +294,36 @@
     padding: 0 100px;
 }
 .services > div{
-    width: 31%;
+    width: 100%;
     background-color: rgb(227, 238, 230);
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-top: 20px;
     box-shadow: 1px 1px 0.5em grey;
-    /* padding: 30px; */
-    /* margin-left: 10px; */
-    /* margin-right: 10px; */
-    /* margin: 0 auto; */
 }
+
+@media screen and (min-width:576px) {
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+      }  
+      .services > div{
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(50% - 2rem);
+        margin-bottom: 1rem;
+      }
+    
+}
+@media screen and (min-width:1170px) {
+    .services{
+        width:50%;
+        flex: 0 0 calc(25% - 2rem);
+    }
+    
+}
+
 .services img{
     width: 100%;
     border-top-left-radius: 10px;
@@ -313,18 +363,25 @@
     line-height: 25px;
 }
 
-.contact{
+/* end of srvice section */
+
+
+
+
+
+ .contact{
     margin-top: 100px;
     background-color: rgb(227, 238, 230);
 }
 .address-form{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 100px;
 }
 .address-form > div,form{
-    width: 100%;
+    width: 55%;
     /* height: 340px; */
 }
 .address > p{
@@ -340,6 +397,7 @@
     line-height: 20px;
 }
 form{
+    margin-top: 30px;
     /* height: 359px; */
     border-radius: 10px;
     width: 100%;
@@ -390,4 +448,30 @@ form > button{
     word-spacing: 10px;
     letter-spacing: 10px;
 }
+.reserved{
+    letter-spacing: 10px;
+    color: white;
+}
 
+@media screen and (min-width:576px) {
+    .address-form{
+        display: flex;
+        flex-wrap: wrap;
+      }  
+      .address-form > div,form{
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(50% - 2rem);
+        margin-bottom: 1rem;
+      }
+    
+}
+@media screen and (min-width:1170px) {
+    .address-form{
+        width:100%;
+        flex: 0 0 calc(50% - 2rem);
+    }
+    
+}
+ 
